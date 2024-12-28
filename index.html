@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="mainContainer">
+      <h1>Signup</h1>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle" checked />
+        <span class="slider round"></span>
+      </label>
+
+      <p id="mode-text">Dark Mode</p>
+      <form method="post">
+        <input type="text" id="fullName" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="confirm password"
+          id="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <input type="date" id="dob" required />
+        <div class="radioContainer">
+          <input type="radio" name="role" id="student" required />Student
+          <input type="radio" name="role" id="employee" required />Employee
+        </div>
+        <div class="termsContainer">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I Agree to all terms and conditions</label>
+        </div>
+        <button type="submit">Signup</button>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
